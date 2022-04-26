@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Gatsby';
+    src: url('fonts/GatsbyFLF.ttf') format('truetype');
+}
+header {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: grid;
+    grid-template: "nothing nothing nothing",
+                   "nothing mytitle nothing",
+                   "nothing nothing nothing";
+    background-image: url("../pics/background.jpg");
+    background-size: cover;
+    background-position:50% 50%;
+}
+
+h1 {
+    font-family: 'Gatsby';
+    font-size: 100px;
+    grid-area: mytitle;
+}
+
+@media screen and (max-width: 300px) {
+    h1 {
+        font-size: 50px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 75px;
+    } 
+}
